@@ -1,1 +1,2 @@
-* linguistic-language=ABAP
+* linguist-vendored
+*.js linguist-vendored=false
