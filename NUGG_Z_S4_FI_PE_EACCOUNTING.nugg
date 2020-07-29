@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <nugget name="Z_S4_FI_PE_EACCOUNTING">
- <DTEL ROLLNAME="ZTIPOXML" DDLANGUAGE="S" ROUTPUTLEN="000000" HEADLEN="55" SCRLEN1="10" SCRLEN2="20" SCRLEN3="40" DDTEXT="Tipo de XML" REPTEXT="Tipo de XML" SCRTEXT_S="Tipo XML" SCRTEXT_M="Tipo de XML" SCRTEXT_L="Tipo de XML" AUTHCLASS="00" DTELMASTER="S" DATATYPE="CHAR" LENG="000002" DECIMALS="000000" OUTPUTLEN="000002" MultiLanguageSupport="X">
-  <tpara/>
-  <DDLANGUAGE LANGU="S">
-   <DD04V ROLLNAME="ZTIPOXML" DDLANGUAGE="S" ROUTPUTLEN="000000" HEADLEN="55" SCRLEN1="10" SCRLEN2="20" SCRLEN3="40" DDTEXT="Tipo de XML" REPTEXT="Tipo de XML" SCRTEXT_S="Tipo XML" SCRTEXT_M="Tipo de XML" SCRTEXT_L="Tipo de XML" AUTHCLASS="00" DTELMASTER="S" DATATYPE="CHAR" LENG="000002" DECIMALS="000000" OUTPUTLEN="000002"/>
-  </DDLANGUAGE>
- </DTEL>
- <DTEL ROLLNAME="ZFIGLMX_BALANCE_N" DDLANGUAGE="S" DOMNAME="XFELD" ROUTPUTLEN="000000" HEADLEN="55" SCRLEN1="10" SCRLEN2="20" SCRLEN3="40" DDTEXT="Crear fichero XML para saldos de cuenta" REPTEXT="Saldo de cuenta normal" SCRTEXT_S="Saldo N" SCRTEXT_M="Saldo de cuenta nor." SCRTEXT_L="Saldo de cuenta normal" AUTHCLASS="00" DTELMASTER="S" DATATYPE="CHAR" LENG="000001" DECIMALS="000000" OUTPUTLEN="000001" VALEXI="X" REFKIND="D" MultiLanguageSupport="X">
-  <tpara/>
-  <DDLANGUAGE LANGU="S">
-   <DD04V ROLLNAME="ZFIGLMX_BALANCE_N" DDLANGUAGE="S" DOMNAME="XFELD" ROUTPUTLEN="000000" HEADLEN="55" SCRLEN1="10" SCRLEN2="20" SCRLEN3="40" DDTEXT="Crear fichero XML para saldos de cuenta" REPTEXT="Saldo de cuenta normal" SCRTEXT_S="Saldo N" SCRTEXT_M="Saldo de cuenta nor." SCRTEXT_L="Saldo de cuenta normal" AUTHCLASS="00" DTELMASTER="S" DATATYPE="CHAR" LENG="000001" DECIMALS="000000" OUTPUTLEN="000001" VALEXI="X" REFKIND="D"/>
-  </DDLANGUAGE>
- </DTEL>
- <DTEL ROLLNAME="ZFIGLMX_BALANCE_C" DDLANGUAGE="S" DOMNAME="XFELD" ROUTPUTLEN="000000" HEADLEN="55" SCRLEN1="10" SCRLEN2="20" SCRLEN3="40" DDTEXT="Crear fichero XML para saldos de cuenta" REPTEXT="Saldo de cuenta complementario" SCRTEXT_S="Saldo C" SCRTEXT_M="Saldo de cuenta comp" SCRTEXT_L="Saldo de cuenta complementario" AUTHCLASS="00" DTELMASTER="S" DATATYPE="CHAR" LENG="000001" DECIMALS="000000" OUTPUTLEN="000001" VALEXI="X" REFKIND="D" MultiLanguageSupport="X">
-  <tpara/>
-  <DDLANGUAGE LANGU="S">
-   <DD04V ROLLNAME="ZFIGLMX_BALANCE_C" DDLANGUAGE="S" DOMNAME="XFELD" ROUTPUTLEN="000000" HEADLEN="55" SCRLEN1="10" SCRLEN2="20" SCRLEN3="40" DDTEXT="Crear fichero XML para saldos de cuenta" REPTEXT="Saldo de cuenta complementario" SCRTEXT_S="Saldo C" SCRTEXT_M="Saldo de cuenta comp" SCRTEXT_L="Saldo de cuenta complementario" AUTHCLASS="00" DTELMASTER="S" DATATYPE="CHAR" LENG="000001" DECIMALS="000000" OUTPUTLEN="000001" VALEXI="X" REFKIND="D"/>
-  </DDLANGUAGE>
- </DTEL>
  <FUGR AREA="ZFITEACCOUNTING" SPRAS="S" AREAT="Actualiz.tablas ampliada (generada)">
   <functionGroupDocumentation/>
   <mainprogram NAME="SAPLZFITEACCOUNTING" SQLX="X" DBAPL="S" DBNA="D$" SUBC="F" APPL="S" RMAND="200" RLOAD="S" FIXPT="X" LDBNAME="D$S" UCCHECK="X">
@@ -208,369 +190,6 @@ FUNCTION-POOL ZFITEACCOUNTING            MESSAGE-ID SV.
    </functionmodule>
   </functionmodules>
  </FUGR>
- <PROG NAME="Z_S4_FI_PE_EACCOUNTING" VARCL="X" SUBC="1" APPL="F" RSTAT="K" RMAND="200" RLOAD="S" FIXPT="X" UCCHECK="X">
-  <textPool>
-   <language SPRAS="S">
-    <textElement ID="I" KEY="001" ENTRY="Selección general" LENGTH="27 "/>
-    <textElement ID="I" KEY="002" ENTRY="Selección de ficheros" LENGTH="42 "/>
-    <textElement ID="I" KEY="003" ENTRY="Tipo de fichero" LENGTH="25 "/>
-    <textElement ID="I" KEY="004" ENTRY="Plan de cuentas" LENGTH="25 "/>
-    <textElement ID="I" KEY="005" ENTRY="Opciones archivo" LENGTH="26 "/>
-    <textElement ID="I" KEY="006" ENTRY="Introducir sociedad" LENGTH="29 "/>
-    <textElement ID="I" KEY="007" ENTRY="Introducir ejercicio" LENGTH="40 "/>
-    <textElement ID="I" KEY="008" ENTRY="Introducir período/mes" LENGTH="44 "/>
-    <textElement ID="I" KEY="009" ENTRY="Introducir estructura de balance/PyG" LENGTH="72 "/>
-    <textElement ID="I" KEY="010" ENTRY="Introducir fecha de modificación" LENGTH="64 "/>
-    <textElement ID="I" KEY="011" ENTRY="Error al crear lista ALV" LENGTH="48 "/>
-    <textElement ID="I" KEY="012" ENTRY="Mexico Electronic Accounting" LENGTH="56 "/>
-    <textElement ID="I" KEY="013" ENTRY="Detalles de cabecera :" LENGTH="44 "/>
-    <textElement ID="I" KEY="014" ENTRY="Detalles de cuenta:" LENGTH="29 "/>
-    <textElement ID="I" KEY="015" ENTRY="Versión" LENGTH="17 "/>
-    <textElement ID="I" KEY="016" ENTRY="Versión del formato para el plan de cuentas" LENGTH="86 "/>
-    <textElement ID="I" KEY="017" ENTRY="RFC" LENGTH="13 "/>
-    <textElement ID="I" KEY="018" ENTRY="Número de registro (RFC)" LENGTH="48 "/>
-    <textElement ID="I" KEY="019" ENTRY="Número de cuentas" LENGTH="27 "/>
-    <textElement ID="I" KEY="020" ENTRY="Número total de cuentas en el plan de cuentas" LENGTH="90 "/>
-    <textElement ID="I" KEY="021" ENTRY="Período del informe" LENGTH="29 "/>
-    <textElement ID="I" KEY="022" ENTRY="Mes a partir del cual es válido el plan de cuentas" LENGTH="100 "/>
-    <textElement ID="I" KEY="023" ENTRY="Año del informe" LENGTH="25 "/>
-    <textElement ID="I" KEY="024" ENTRY="Ejercicio a partir del cual es válido plan cuentas" LENGTH="100 "/>
-    <textElement ID="I" KEY="025" ENTRY="Cuenta/posición de balance/PyG" LENGTH="60 "/>
-    <textElement ID="I" KEY="040" ENTRY="Plan de cuentas" LENGTH="25 "/>
-    <textElement ID="I" KEY="041" ENTRY="Saldos de cuenta" LENGTH="26 "/>
-    <textElement ID="I" KEY="042" ENTRY="Detalles de posición FSV" LENGTH="48 "/>
-    <textElement ID="I" KEY="043" ENTRY="Filtro adicional" LENGTH="26 "/>
-    <textElement ID="I" KEY="044" ENTRY="Indicar año de reporting" LENGTH="48 "/>
-    <textElement ID="I" KEY="045" ENTRY="Indicar fecha de contabiliz." LENGTH="56 "/>
-    <textElement ID="I" KEY="046" ENTRY="Firma digital" LENGTH="23 "/>
-    <textElement ID="I" KEY="050" ENTRY="Introducir número de orden" LENGTH="52 "/>
-    <textElement ID="I" KEY="051" ENTRY="Introducir número de proceso" LENGTH="56 "/>
-    <textElement ID="I" KEY="052" ENTRY="Introducir tipo de requisito" LENGTH="56 "/>
-    <textElement ID="I" KEY="053" ENTRY="Período y ejerc.fiscal" LENGTH="44 "/>
-    <textElement ID="I" KEY="054" ENTRY="Mes y año de declaración" LENGTH="48 "/>
-    <textElement ID="I" KEY="055" ENTRY="Sel.datos" LENGTH="19 "/>
-    <textElement ID="I" KEY="056" ENTRY="/" LENGTH="11 "/>
-    <textElement ID="I" KEY="057" ENTRY="No existe información para el tipo de fichero" LENGTH="90 "/>
-    <textElement ID="I" KEY="058" ENTRY="Ocurrio un error al obtener query" LENGTH="66 "/>
-    <textElement ID="I" KEY="059" ENTRY="Se creó en PC el fichero &amp;1 con formato &amp;2." LENGTH="86 "/>
-    <textElement ID="I" KEY="060" ENTRY="Error al abrir rl Job." LENGTH="44 "/>
-    <textElement ID="R" ENTRY="Generar archivos XML para Electronic Accounting" LENGTH="47 "/>
-    <textElement ID="S" KEY="P_AUX" ENTRY="D       ." LENGTH="27 "/>
-    <textElement ID="S" KEY="P_BAL_C" ENTRY="D       ." LENGTH="38 "/>
-    <textElement ID="S" KEY="P_BAL_N" ENTRY="D       ." LENGTH="30 "/>
-    <textElement ID="S" KEY="P_COA" ENTRY="D       ." LENGTH="23 "/>
-    <textElement ID="S" KEY="P_CREPPR" ENTRY="D       ." LENGTH="15 "/>
-    <textElement ID="S" KEY="P_CREPYR" ENTRY="D       ." LENGTH="23 "/>
-    <textElement ID="S" KEY="P_GJAHR" ENTRY="D       ." LENGTH="23 "/>
-    <textElement ID="S" KEY="P_JE" ENTRY="D       ." LENGTH="23 "/>
-    <textElement ID="S" KEY="P_ORD" ENTRY="D       ." LENGTH="23 "/>
-    <textElement ID="S" KEY="P_PERIOD" ENTRY="D       ." LENGTH="15 "/>
-    <textElement ID="S" KEY="P_PRO" ENTRY="D       ." LENGTH="25 "/>
-    <textElement ID="S" KEY="P_RJAHR" ENTRY="D       ." LENGTH="17 "/>
-    <textElement ID="S" KEY="P_TREQ" ENTRY="D       ." LENGTH="25 "/>
-    <textElement ID="S" KEY="S_BUDAT" ENTRY="D       ." LENGTH="26 "/>
-    <textElement ID="S" KEY="S_BUKRS" ENTRY="D       ." LENGTH="16 "/>
-   </language>
-  </textPool>
-  <source>************************************************************************
-* Program Name         : Z_S4_FI_PE_EACCOUNTING                        *
-* Created By           : Adan Israel García Reséndiz                   *
-* Date                 : Julio 13 2020                                 *
-************************************************************************
-
-* Program Description **************************************************
-*  Program to simplify the use of the standard program                 *
-*  RPFIGLMX_EACCOUNTING                                                *
-************************************************************************
-
-* History Program Changes **********************************************
-*                                                                      *
-* Transport      Date     Developer          Ver Short Description     *
-* ==========  ==========  =================  === ===================== *
-* S4DK901325  13-07-2020  Adan García R.     001 Initial Transport     *
-************************************************************************
-
-REPORT z_s4_fi_pe_eaccounting MESSAGE-ID f7.&quot; NO STANDARD PAGE HEADING LINE-SIZE 255.
-
-*&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-*&lt;    z_s4_fi_in_eaccounting_data          Data Declarations          &gt;
-*&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-INCLUDE z_s4_fi_in_eaccounting_data.
-
-*&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-*&lt;    z_s4_fi_in_eaccounting_sel           Selection Screen           &gt;
-*&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-INCLUDE z_s4_fi_in_eaccounting_sel.
-
-*&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-*&lt;    z_s4_fi_in_eaccounting_form          Subroutines                &gt;
-*&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-INCLUDE z_s4_fi_in_eaccounting_form.
-
-AT SELECTION-SCREEN OUTPUT.
-  PERFORM screen_invisible.
-
-START-OF-SELECTION.
-
-  IF p_coa EQ abap_true.
-*/* Set values to where clauses. */
-    define_field_value_for_query:
-        lt_condtab ls_condtab &apos;ZTIPOXML&apos; &apos;EQ&apos; &apos;01&apos; &apos;&apos;.
-
-  ELSEIF p_bal_n EQ abap_true.
-*/* Set values to where clauses. */
-    define_field_value_for_query:
-        lt_condtab ls_condtab &apos;ZTIPOXML&apos; &apos;EQ&apos; &apos;02&apos; &apos;&apos;.
-
-  ELSEIF p_bal_c EQ abap_true.
-*/* Set values to where clauses. */
-    define_field_value_for_query:
-        lt_condtab ls_condtab &apos;ZTIPOXML&apos; &apos;EQ&apos; &apos;03&apos; &apos;&apos;.
-
-  ELSEIF p_je EQ abap_true.
-*/* Set values to where clauses. */
-    define_field_value_for_query:
-        lt_condtab ls_condtab &apos;ZTIPOXML&apos; &apos;EQ&apos; &apos;04&apos; &apos;&apos;.
-
-  ELSEIF p_aux EQ abap_true.
-*/* Set values to where clauses. */
-    define_field_value_for_query:
-        lt_condtab ls_condtab &apos;ZTIPOXML&apos; &apos;EQ&apos; &apos;05&apos; &apos;&apos;.
-
-  ENDIF.
-
-*/* Set values to where clauses. */
-  define_field_value_for_query:
-      lt_condtab ls_condtab &apos;BUKRS&apos; &apos;EQ&apos; s_bukrs &apos;&apos;.
-
-  CALL FUNCTION &apos;RH_DYNAMIC_WHERE_BUILD&apos;
-    EXPORTING
-      dbtable         = space &quot; can be empty
-    TABLES
-      condtab         = lt_condtab
-      where_clause    = gt_where_clauses
-    EXCEPTIONS
-      empty_condtab   = 01
-      no_db_field     = 02
-      unknown_db      = 03
-      wrong_condition = 04.
-
-  IF sy-subrc EQ 0.
-
-    SELECT
-      bukrs
-      ztipoxml
-      versn
-      fsnam
-      fsnam_l
-      INTO CORRESPONDING FIELDS OF wa_zfiteaccounting
-      FROM zfiteaccounting
-      UP TO 1 ROWS
-      WHERE (gt_where_clauses)
-      .
-    ENDSELECT.
-
-    IF sy-dbcnt &gt; 0.
-
-*/* Set values from parametes and select options. */
-      define_screen_values:
-          lt_seltab ls_seltab &apos;P_COA&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_true &apos;&apos;,
-          lt_seltab ls_seltab &apos;P_BAL&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; &apos;&apos; &apos;&apos;,
-          lt_seltab ls_seltab &apos;P_JE&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; &apos;&apos; &apos;&apos;,
-          lt_seltab ls_seltab &apos;P_AUX&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; &apos;&apos; &apos;&apos;,
-          lt_seltab ls_seltab &apos;S_BUKRS&apos; &apos;S&apos; &apos;I&apos; &apos;EQ&apos; wa_zfiteaccounting-bukrs &apos;&apos;,
-          lt_seltab ls_seltab &apos;P_GJAHR&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_gjahr &apos;&apos;,
-          lt_seltab ls_seltab &apos;P_PERIOD&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_period &apos;&apos;,
-          lt_seltab ls_seltab &apos;P_FSV&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; wa_zfiteaccounting-versn &apos;&apos;,
-          lt_seltab ls_seltab &apos;P_PATH&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; &apos;/usr/sap/S4D/SAT/XAXX010101XXX201701CT.xml&apos; &apos;&apos;.
-
-*/* Set values from parametes and select options. */
-      define_screen_values:
-          lt_seltab ls_seltab &apos;PAR_FILE&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; wa_zfiteaccounting-fsnam_l &apos;&apos;.
-
-
-
-      DATA: va_jobname  LIKE tbtco-jobname,
-            vn_jobcount LIKE tbtco-jobcount.
-
-*  /* Set job name. */
-      CONCATENATE &apos;ZJOB_EACCOUNTING&apos; sy-datum sy-uname INTO va_jobname SEPARATED BY &apos;_&apos;.
-
-*  /* open job. */
-      CALL FUNCTION &apos;JOB_OPEN&apos;
-        EXPORTING
-          jobname          = va_jobname
-        IMPORTING
-          jobcount         = vn_jobcount
-        EXCEPTIONS
-          cant_create_job  = 1
-          invalid_job_data = 2
-          jobname_missing  = 3
-          OTHERS           = 4.
-      CASE sy-subrc.
-        WHEN 0.
-        WHEN OTHERS.
-          MESSAGE e208(00) WITH TEXT-060.
-      ENDCASE.
-
-*  /* Call report. */
-      SUBMIT rpfiglmx_eaccounting
-              USER sy-uname
-              VIA JOB va_jobname NUMBER vn_jobcount
-              WITH SELECTION-TABLE lt_seltab
-*              EXPORTING LIST TO MEMORY
-              AND RETURN.
-
-*  /* Close job. */
-      CALL FUNCTION &apos;JOB_CLOSE&apos;
-        EXPORTING
-          jobcount             = vn_jobcount
-          jobname              = va_jobname
-          strtimmed            = &apos;X&apos;  &quot; start immediatly
-        EXCEPTIONS
-          cant_start_immediate = 1
-          invalid_startdate    = 2
-          jobname_missing      = 3
-          job_close_failed     = 4
-          job_nosteps          = 5
-          job_notex            = 6
-          lock_failed          = 7
-          OTHERS               = 8.
-
-      IF sy-subrc EQ 0.
-
-        par_path = &apos;/usr/sap/S4D/SAT/XAXX010101XXX201701CT.xml&apos;.
-
-        CALL FUNCTION &apos;FILE_VALIDATE_NAME&apos;
-          EXPORTING
-            logical_filename  = gc_filename &quot;FI_RFASLDPC
-          CHANGING
-            physical_filename = par_path &quot;/usr/sap/S4D/SAT/XAXX010101XXX201701CT.xml
-          EXCEPTIONS
-            OTHERS            = 1.
-
-        IF sy-subrc &lt;&gt; 0.
-          MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno
-            WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.
-        ENDIF.
-
-        OPEN DATASET par_path FOR INPUT IN BINARY MODE.
-
-        APPEND space TO dtastr.                             &quot;1776497
-        READ TABLE dtastr ASSIGNING &lt;fs_line&gt; INDEX 1.      &quot;1776497
-        READ DATASET par_path INTO &lt;fs_line&gt; LENGTH hlp_length. &quot;1776497
-
-        CLOSE DATASET par_path.
-
-        hlp_file = &apos;D:\temp\XAXX010101XXX201701CT.xml&apos;.
-
-        hlp_file_h = hlp_file.
-
-* begin of insertion &quot;837748
-        CALL FUNCTION &apos;GUI_DOWNLOAD&apos;
-          EXPORTING
-            filename                  = hlp_file_h  &quot;Zielfile
-            filetype                  = &apos;ASC&apos;
-            codepage                  = &apos;1100&apos;                  &quot;989338
-            write_lf                  = space  &quot;do not append CR/LF
-            trunc_trailing_blanks     = space  &quot;do not delete any blanks
-            trunc_trailing_blanks_eol = space  &quot;do not delete any blanks
-          TABLES
-            data_tab                  = dtastr                &quot;1776497
-          EXCEPTIONS
-            file_not_found            = 1                     &quot;1597340
-            file_write_error          = 2.
-* end of insertion &quot;837748
-
-        CASE sy-subrc.
-          WHEN 0.
-            PERFORM write_text USING TEXT-004.
-            ULINE.
-          WHEN 1.
-            MESSAGE e306 WITH hlp_file.
-          WHEN 2.
-            MESSAGE e309 WITH hlp_file.
-        ENDCASE.
-
-      ENDIF.
-
-    ELSE.
-      MESSAGE s750(tpda) WITH TEXT-057 DISPLAY LIKE &apos;E&apos;.
-      RETURN.
-    ENDIF.
-  ELSE.
-    MESSAGE s750(tpda) WITH TEXT-058 DISPLAY LIKE &apos;E&apos;.
-    RETURN.
-  ENDIF.</source>
- </PROG>
- <PROG NAME="Z_S4_FI_IN_EACCOUNTING_SEL" VARCL="X" SUBC="I" APPL="F" RSTAT="K" RMAND="200" RLOAD="S" UCCHECK="X">
-  <textPool>
-   <language SPRAS="S">
-    <textElement ID="R" ENTRY="Include Z_S4_FI_IN_EACCOUNTING_SEL" LENGTH="34 "/>
-   </language>
-  </textPool>
-  <source>************************************************************************
-* Program Name         : Z_S4_FI_IN_EACCOUNTING_SEL                    *
-* Created By           : Adan Israel García Reséndiz                   *
-* Date                 : Julio 13 2020                                 *
-************************************************************************
-
-* Program Description **************************************************
-*  Include with define select parameters and events for program        *
-*  Z_S4_FI_PE_EACCOUNTING                                              *
-************************************************************************
-
-* History Program Changes **********************************************
-*                                                                      *
-* Transport      Date     Developer          Ver Short Description     *
-* ==========  ==========  =================  === ===================== *
-* S4DK901325  13-07-2020  Adan García R.     001 Initial Transport     *
-************************************************************************
-
-*/* Displays section screen for layout parameter */
-
-SELECTION-SCREEN BEGIN OF BLOCK b02a WITH FRAME TITLE TEXT-003.
-  PARAMETERS:
-    p_coa   TYPE figlmx_coa        RADIOBUTTON GROUP rb1 USER-COMMAND cmd DEFAULT &apos;X&apos; MODIF ID a01,
-    p_bal_n TYPE zfiglmx_balance_n RADIOBUTTON GROUP rb1 MODIF ID  a02,
-    p_bal_c TYPE zfiglmx_balance_c RADIOBUTTON GROUP rb1 MODIF ID  a22,
-    p_je    TYPE figlmx_je         RADIOBUTTON GROUP rb1 MODIF ID  a03,
-    p_aux   TYPE figlmx_aux        RADIOBUTTON GROUP rb1 MODIF ID  a04.
-
-SELECTION-SCREEN END OF BLOCK b02a.
-
-SELECTION-SCREEN BEGIN OF BLOCK b01 WITH FRAME TITLE TEXT-001.
-*  SELECT-OPTIONS:
-*  s_bukrs FOR l_bukrs   MODIF ID b01.
-  PARAMETERS:
-  s_bukrs TYPE bkpf-bukrs MODIF ID b01.
-
-  SELECTION-SCREEN BEGIN OF BLOCK c01 WITH FRAME TITLE TEXT-055.
-
-    PARAMETERS:
-      p_creppr TYPE figlmx_per    MODIF ID b13,
-      p_crepyr TYPE figlmx_year   MODIF ID b12.
-
-  SELECTION-SCREEN END OF BLOCK c01.
-
-  PARAMETERS:
-    p_gjahr  TYPE figlmx_year  MODIF ID b03,
-    p_rjahr  TYPE bkpf-gjahr   MODIF ID b04,
-    p_period TYPE figlmx_per   MODIF ID b05.
-
-  SELECT-OPTIONS: s_budat  FOR l_budat  MODIF ID b09.
-
-  PARAMETERS:
-    p_treq TYPE figlmx_req_typ   MODIF ID c03,
-    p_ord  TYPE figlmx_ord_no    MODIF ID c04,
-    p_pro  TYPE figlmx_pro_no    MODIF ID c05.
-
-  SELECTION-SCREEN SKIP 1.
-
-*
-SELECTION-SCREEN END OF BLOCK b01.
-*</source>
- </PROG>
  <PROG NAME="Z_S4_FI_IN_EACCOUNTING_DATA" VARCL="X" SUBC="I" APPL="F" RSTAT="K" RMAND="200" RLOAD="S" UCCHECK="X">
   <textPool>
    <language SPRAS="S">
@@ -717,7 +336,7 @@ FORM screen_invisible .
 *          WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.
   ENDIF.
 
-  IF p_coa IS NOT INITIAL OR ( p_bal_n IS NOT INITIAL ).
+  IF p_coa IS NOT INITIAL OR p_bal IS NOT INITIAL.
     LOOP AT SCREEN.
       IF screen-name = &apos;P_RJAHR&apos; OR screen-group1 = &apos;B04&apos;.
         screen-active = &apos;0&apos;.
@@ -885,7 +504,7 @@ FORM screen_invisible .
     ENDLOOP.
   ENDIF.
 
-  IF ( p_bal_n IS INITIAL ).
+  IF p_bal IS INITIAL.
 
     LOOP AT SCREEN.
 
@@ -900,11 +519,20 @@ FORM screen_invisible .
 
     ENDLOOP.
 
-  ELSEIF ( p_bal_n IS NOT INITIAL ).
+  ELSEIF p_bal IS NOT INITIAL.
 
     LOOP AT SCREEN.
 
       IF screen-group1 EQ &apos;B03&apos; OR screen-group1 EQ &apos;B05&apos;.
+        screen-active = &apos;0&apos;.
+        MODIFY SCREEN.
+      ENDIF.
+    ENDLOOP.
+  ENDIF.
+
+  IF p_bal IS INITIAL.
+    LOOP AT SCREEN.
+      IF screen-group1 EQ &apos;Y01&apos; or screen-group1 EQ &apos;Y02&apos;.
         screen-active = &apos;0&apos;.
         MODIFY SCREEN.
       ENDIF.
@@ -1000,6 +628,531 @@ ENDFORM.
 *   End Form WRITE_TEXT                                               :
 *::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</source>
  </PROG>
+ <PROG NAME="Z_S4_FI_IN_EACCOUNTING_SEL" VARCL="X" SUBC="I" APPL="F" RSTAT="K" RMAND="200" RLOAD="S" UCCHECK="X">
+  <textPool>
+   <language SPRAS="S">
+    <textElement ID="R" ENTRY="Include Z_S4_FI_IN_EACCOUNTING_SEL" LENGTH="34 "/>
+   </language>
+  </textPool>
+  <source>************************************************************************
+* Program Name         : Z_S4_FI_IN_EACCOUNTING_SEL                    *
+* Created By           : Adan Israel García Reséndiz                   *
+* Date                 : Julio 13 2020                                 *
+************************************************************************
+
+* Program Description **************************************************
+*  Include with define select parameters and events for program        *
+*  Z_S4_FI_PE_EACCOUNTING                                              *
+************************************************************************
+
+* History Program Changes **********************************************
+*                                                                      *
+* Transport      Date     Developer          Ver Short Description     *
+* ==========  ==========  =================  === ===================== *
+* S4DK901325  13-07-2020  Adan García R.     001 Initial Transport     *
+************************************************************************
+
+*/* Displays section screen for layout parameter */
+
+SELECTION-SCREEN BEGIN OF BLOCK b02a WITH FRAME TITLE TEXT-003.
+  PARAMETERS:
+    p_coa TYPE figlmx_coa        RADIOBUTTON GROUP rb1 USER-COMMAND cmd DEFAULT &apos;X&apos; MODIF ID a01,
+    p_bal TYPE figlmx_balance    RADIOBUTTON GROUP rb1 MODIF ID  a02.
+
+  SELECTION-SCREEN BEGIN OF BLOCK z01 WITH FRAME TITLE TEXT-061.
+    PARAMETERS:
+      p_bal_n TYPE zfiglmx_balance_n RADIOBUTTON GROUP rb USER-COMMAND cmd DEFAULT &apos;X&apos; MODIF ID  y01,
+      p_bal_c TYPE zfiglmx_balance_c RADIOBUTTON GROUP rb MODIF ID  y02.
+  SELECTION-SCREEN END OF BLOCK z01.
+
+  PARAMETERS:
+    p_je  TYPE figlmx_je         RADIOBUTTON GROUP rb1 MODIF ID  a03,
+    p_aux TYPE figlmx_aux        RADIOBUTTON GROUP rb1 MODIF ID  a04.
+
+
+SELECTION-SCREEN END OF BLOCK b02a.
+
+SELECTION-SCREEN BEGIN OF BLOCK b01 WITH FRAME TITLE TEXT-001.
+*  SELECT-OPTIONS:
+*  s_bukrs FOR l_bukrs   MODIF ID b01.
+  PARAMETERS:
+  s_bukrs TYPE bkpf-bukrs MODIF ID b01.
+
+  SELECTION-SCREEN BEGIN OF BLOCK c01 WITH FRAME TITLE TEXT-055.
+
+    PARAMETERS:
+      p_creppr TYPE figlmx_per    MODIF ID b13,
+      p_crepyr TYPE figlmx_year   MODIF ID b12.
+
+  SELECTION-SCREEN END OF BLOCK c01.
+
+  PARAMETERS:
+    p_gjahr  TYPE figlmx_year  MODIF ID b03,
+    p_rjahr  TYPE bkpf-gjahr   MODIF ID b04,
+    p_period TYPE figlmx_per   MODIF ID b05.
+
+  SELECT-OPTIONS: s_budat  FOR l_budat  MODIF ID b09.
+
+  PARAMETERS:
+    p_treq TYPE figlmx_req_typ   MODIF ID c03,
+    p_ord  TYPE figlmx_ord_no    MODIF ID c04,
+    p_pro  TYPE figlmx_pro_no    MODIF ID c05.
+
+  SELECTION-SCREEN SKIP 1.
+
+*
+SELECTION-SCREEN END OF BLOCK b01.
+*</source>
+ </PROG>
+ <PROG NAME="Z_S4_FI_PE_EACCOUNTING" VARCL="X" SUBC="1" APPL="F" RSTAT="K" RMAND="200" RLOAD="S" FIXPT="X" UCCHECK="X">
+  <textPool>
+   <language SPRAS="S">
+    <textElement ID="I" KEY="001" ENTRY="Selección general" LENGTH="27 "/>
+    <textElement ID="I" KEY="002" ENTRY="Selección de ficheros" LENGTH="42 "/>
+    <textElement ID="I" KEY="003" ENTRY="Tipo de fichero" LENGTH="25 "/>
+    <textElement ID="I" KEY="004" ENTRY="Plan de cuentas" LENGTH="25 "/>
+    <textElement ID="I" KEY="005" ENTRY="Opciones archivo" LENGTH="26 "/>
+    <textElement ID="I" KEY="006" ENTRY="Introducir sociedad" LENGTH="29 "/>
+    <textElement ID="I" KEY="007" ENTRY="Introducir ejercicio" LENGTH="40 "/>
+    <textElement ID="I" KEY="008" ENTRY="Introducir período/mes" LENGTH="44 "/>
+    <textElement ID="I" KEY="009" ENTRY="Introducir estructura de balance/PyG" LENGTH="72 "/>
+    <textElement ID="I" KEY="010" ENTRY="Introducir fecha de modificación" LENGTH="64 "/>
+    <textElement ID="I" KEY="011" ENTRY="Error al crear lista ALV" LENGTH="48 "/>
+    <textElement ID="I" KEY="012" ENTRY="Mexico Electronic Accounting" LENGTH="56 "/>
+    <textElement ID="I" KEY="013" ENTRY="Detalles de cabecera :" LENGTH="44 "/>
+    <textElement ID="I" KEY="014" ENTRY="Detalles de cuenta:" LENGTH="29 "/>
+    <textElement ID="I" KEY="015" ENTRY="Versión" LENGTH="17 "/>
+    <textElement ID="I" KEY="016" ENTRY="Versión del formato para el plan de cuentas" LENGTH="86 "/>
+    <textElement ID="I" KEY="017" ENTRY="RFC" LENGTH="13 "/>
+    <textElement ID="I" KEY="018" ENTRY="Número de registro (RFC)" LENGTH="48 "/>
+    <textElement ID="I" KEY="019" ENTRY="Número de cuentas" LENGTH="27 "/>
+    <textElement ID="I" KEY="020" ENTRY="Número total de cuentas en el plan de cuentas" LENGTH="90 "/>
+    <textElement ID="I" KEY="021" ENTRY="Período del informe" LENGTH="29 "/>
+    <textElement ID="I" KEY="022" ENTRY="Mes a partir del cual es válido el plan de cuentas" LENGTH="100 "/>
+    <textElement ID="I" KEY="023" ENTRY="Año del informe" LENGTH="25 "/>
+    <textElement ID="I" KEY="024" ENTRY="Ejercicio a partir del cual es válido plan cuentas" LENGTH="100 "/>
+    <textElement ID="I" KEY="025" ENTRY="Cuenta/posición de balance/PyG" LENGTH="60 "/>
+    <textElement ID="I" KEY="040" ENTRY="Plan de cuentas" LENGTH="25 "/>
+    <textElement ID="I" KEY="041" ENTRY="Saldos de cuenta" LENGTH="26 "/>
+    <textElement ID="I" KEY="042" ENTRY="Detalles de posición FSV" LENGTH="48 "/>
+    <textElement ID="I" KEY="043" ENTRY="Filtro adicional" LENGTH="26 "/>
+    <textElement ID="I" KEY="044" ENTRY="Indicar año de reporting" LENGTH="48 "/>
+    <textElement ID="I" KEY="045" ENTRY="Indicar fecha de contabiliz." LENGTH="56 "/>
+    <textElement ID="I" KEY="046" ENTRY="Firma digital" LENGTH="23 "/>
+    <textElement ID="I" KEY="050" ENTRY="Introducir número de orden" LENGTH="52 "/>
+    <textElement ID="I" KEY="051" ENTRY="Introducir número de proceso" LENGTH="56 "/>
+    <textElement ID="I" KEY="052" ENTRY="Introducir tipo de requisito" LENGTH="56 "/>
+    <textElement ID="I" KEY="053" ENTRY="Período y ejerc.fiscal" LENGTH="44 "/>
+    <textElement ID="I" KEY="054" ENTRY="Mes y año de declaración" LENGTH="48 "/>
+    <textElement ID="I" KEY="055" ENTRY="Sel.datos" LENGTH="19 "/>
+    <textElement ID="I" KEY="056" ENTRY="/" LENGTH="11 "/>
+    <textElement ID="I" KEY="057" ENTRY="No existe información para el tipo de fichero" LENGTH="90 "/>
+    <textElement ID="I" KEY="058" ENTRY="Ocurrio un error al obtener query" LENGTH="66 "/>
+    <textElement ID="I" KEY="059" ENTRY="Se creó en PC el fichero &amp;1 con formato &amp;2." LENGTH="86 "/>
+    <textElement ID="I" KEY="060" ENTRY="Error al abrir rl Job." LENGTH="44 "/>
+    <textElement ID="I" KEY="061" ENTRY="Tipo de cuenta" LENGTH="24 "/>
+    <textElement ID="R" ENTRY="Generar archivos XML para Electronic Accounting" LENGTH="47 "/>
+    <textElement ID="S" KEY="P_AUX" ENTRY="D       ." LENGTH="27 "/>
+    <textElement ID="S" KEY="P_BAL" ENTRY="D       ." LENGTH="23 "/>
+    <textElement ID="S" KEY="P_BAL_C" ENTRY="D       ." LENGTH="38 "/>
+    <textElement ID="S" KEY="P_BAL_N" ENTRY="D       ." LENGTH="30 "/>
+    <textElement ID="S" KEY="P_COA" ENTRY="D       ." LENGTH="23 "/>
+    <textElement ID="S" KEY="P_CREPPR" ENTRY="D       ." LENGTH="15 "/>
+    <textElement ID="S" KEY="P_CREPYR" ENTRY="D       ." LENGTH="23 "/>
+    <textElement ID="S" KEY="P_GJAHR" ENTRY="D       ." LENGTH="23 "/>
+    <textElement ID="S" KEY="P_JE" ENTRY="D       ." LENGTH="23 "/>
+    <textElement ID="S" KEY="P_ORD" ENTRY="D       ." LENGTH="23 "/>
+    <textElement ID="S" KEY="P_PERIOD" ENTRY="D       ." LENGTH="15 "/>
+    <textElement ID="S" KEY="P_PRO" ENTRY="D       ." LENGTH="25 "/>
+    <textElement ID="S" KEY="P_RJAHR" ENTRY="D       ." LENGTH="17 "/>
+    <textElement ID="S" KEY="P_TREQ" ENTRY="D       ." LENGTH="25 "/>
+    <textElement ID="S" KEY="S_BUDAT" ENTRY="D       ." LENGTH="26 "/>
+    <textElement ID="S" KEY="S_BUKRS" ENTRY="D       ." LENGTH="16 "/>
+   </language>
+  </textPool>
+  <source>************************************************************************
+* Program Name         : Z_S4_FI_PE_EACCOUNTING                        *
+* Created By           : Adan Israel García Reséndiz                   *
+* Date                 : Julio 13 2020                                 *
+************************************************************************
+
+* Program Description **************************************************
+*  Program to simplify the use of the standard program                 *
+*  RPFIGLMX_EACCOUNTING                                                *
+************************************************************************
+
+* History Program Changes **********************************************
+*                                                                      *
+* Transport      Date     Developer          Ver Short Description     *
+* ==========  ==========  =================  === ===================== *
+* S4DK901325  13-07-2020  Adan García R.     001 Initial Transport     *
+************************************************************************
+
+REPORT z_s4_fi_pe_eaccounting MESSAGE-ID f7.
+
+*&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+*&lt;    z_s4_fi_in_eaccounting_data          Data Declarations          &gt;
+*&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+INCLUDE z_s4_fi_in_eaccounting_data.
+
+*&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+*&lt;    z_s4_fi_in_eaccounting_sel           Selection Screen           &gt;
+*&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+INCLUDE z_s4_fi_in_eaccounting_sel.
+
+*&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+*&lt;    z_s4_fi_in_eaccounting_form          Subroutines                &gt;
+*&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+INCLUDE z_s4_fi_in_eaccounting_form.
+
+AT SELECTION-SCREEN OUTPUT.
+  PERFORM screen_invisible.
+
+START-OF-SELECTION.
+
+  DATA vs_file_name TYPE string.
+  DATA vs_server_path TYPE string.
+  DATA vs_target_path TYPE string.
+  DATA wa_t001z LIKE t001z.
+
+  IF p_coa EQ abap_true.
+*/* Set values to where clauses. */
+    define_field_value_for_query:
+        lt_condtab ls_condtab &apos;ZTIPOXML&apos; &apos;EQ&apos; &apos;01&apos; &apos;&apos;.
+  ELSEIF p_bal EQ abap_true.
+    IF p_bal_n EQ abap_true.
+*  /* Set values to where clauses. */
+      define_field_value_for_query:
+          lt_condtab ls_condtab &apos;ZTIPOXML&apos; &apos;EQ&apos; &apos;02&apos; &apos;&apos;.
+
+    ELSEIF p_bal_c EQ abap_true.
+*  /* Set values to where clauses. */
+      define_field_value_for_query:
+          lt_condtab ls_condtab &apos;ZTIPOXML&apos; &apos;EQ&apos; &apos;03&apos; &apos;&apos;.
+    ENDIF.
+  ELSEIF p_je EQ abap_true.
+*/* Set values to where clauses. */
+    define_field_value_for_query:
+        lt_condtab ls_condtab &apos;ZTIPOXML&apos; &apos;EQ&apos; &apos;04&apos; &apos;&apos;.
+
+  ELSEIF p_aux EQ abap_true.
+*/* Set values to where clauses. */
+    define_field_value_for_query:
+        lt_condtab ls_condtab &apos;ZTIPOXML&apos; &apos;EQ&apos; &apos;05&apos; &apos;&apos;.
+
+  ENDIF.
+
+*/* Set values to where clauses. */
+  define_field_value_for_query:
+      lt_condtab ls_condtab &apos;BUKRS&apos; &apos;EQ&apos; s_bukrs &apos;&apos;.
+
+  CALL FUNCTION &apos;RH_DYNAMIC_WHERE_BUILD&apos;
+    EXPORTING
+      dbtable         = space &quot; can be empty
+    TABLES
+      condtab         = lt_condtab
+      where_clause    = gt_where_clauses
+    EXCEPTIONS
+      empty_condtab   = 01
+      no_db_field     = 02
+      unknown_db      = 03
+      wrong_condition = 04.
+
+  IF sy-subrc EQ 0.
+*/* Get configuration EACCOUNTING. */
+    SELECT
+      bukrs
+      ztipoxml
+      versn
+      fsnam
+      fsnam_l
+      INTO CORRESPONDING FIELDS OF wa_zfiteaccounting
+      FROM zfiteaccounting
+      UP TO 1 ROWS
+      WHERE
+        (gt_where_clauses)
+        ORDER BY bukrs
+      .
+    ENDSELECT.
+
+    IF sy-dbcnt &gt; 0.
+*  /* Additional Specifications for Company Code. */
+      SELECT
+        bukrs
+        party
+        paval
+        INTO CORRESPONDING FIELDS OF wa_t001z
+        FROM t001z
+        UP TO 1 ROWS
+        WHERE
+          bukrs = s_bukrs
+          AND
+          party = &apos;MX_RFC&apos;
+          ORDER BY bukrs
+        .
+      ENDSELECT.
+
+      IF sy-dbcnt &gt; 0.
+
+        IF p_coa EQ abap_true.
+*      /* Get file name. */
+          CONCATENATE wa_t001z-paval p_gjahr p_period &apos;CT&apos; &apos;.xml&apos; INTO vs_file_name.
+*      /* Get server path. */
+          CONCATENATE wa_zfiteaccounting-fsnam vs_file_name INTO vs_server_path.
+*      /* Get target path. */
+          CONCATENATE wa_zfiteaccounting-fsnam_l vs_file_name INTO vs_target_path.
+
+*      /* Set values from parametes and select options. */
+          define_screen_values:
+              lt_seltab ls_seltab &apos;P_COA&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_true &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_BAL&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_false &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_JE&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_false &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_AUX&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_false &apos;&apos;,
+              lt_seltab ls_seltab &apos;S_BUKRS&apos; &apos;S&apos; &apos;I&apos; &apos;EQ&apos; s_bukrs &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_GJAHR&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_gjahr &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_PERIOD&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_period &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_FSV&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; wa_zfiteaccounting-versn &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_PATH&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; vs_server_path &apos;&apos;.
+        ELSEIF p_bal EQ abap_true.
+
+          IF p_bal_c EQ abap_true.
+*        /* Get file name. */
+            CONCATENATE wa_t001z-paval p_crepyr p_creppr &apos;BC&apos; &apos;.xml&apos; INTO vs_file_name.
+          ELSEIF p_bal_n EQ abap_true.
+*        /* Get file name. */
+            CONCATENATE wa_t001z-paval p_crepyr p_creppr &apos;BN&apos; &apos;.xml&apos; INTO vs_file_name.
+          ENDIF.
+*      /* Get server path. */
+          CONCATENATE wa_zfiteaccounting-fsnam vs_file_name INTO vs_server_path.
+*      /* Get target path. */
+          CONCATENATE wa_zfiteaccounting-fsnam_l vs_file_name INTO vs_target_path.
+
+*      /* Set values from parametes and select options. */
+          define_screen_values:
+              lt_seltab ls_seltab &apos;P_COA&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_false &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_BAL&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_true &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_JE&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_false &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_AUX&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_false &apos;&apos;,
+              lt_seltab ls_seltab &apos;S_BUKRS&apos; &apos;S&apos; &apos;I&apos; &apos;EQ&apos; s_bukrs &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_CREPYR&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_crepyr &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_CREPPR&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_creppr &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_FSV&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; wa_zfiteaccounting-versn &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_PATH&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; vs_server_path &apos;&apos;.
+
+        ELSEIF p_je EQ abap_true.
+*      /* Get file name. */
+          CONCATENATE wa_t001z-paval p_rjahr s_budat-low+4(2) &apos;PL&apos; &apos;.xml&apos; INTO vs_file_name.
+*      /* Get server path. */
+          CONCATENATE wa_zfiteaccounting-fsnam vs_file_name INTO vs_server_path.
+*      /* Get target path. */
+          CONCATENATE wa_zfiteaccounting-fsnam_l vs_file_name INTO vs_target_path.
+
+*      /* Set values from parametes and select options. */
+          define_screen_values:
+              lt_seltab ls_seltab &apos;P_COA&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_false &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_BAL&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_false &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_JE&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_true &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_AUX&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_false &apos;&apos;,
+              lt_seltab ls_seltab &apos;S_BUKRS&apos; &apos;S&apos; &apos;I&apos; &apos;EQ&apos; s_bukrs &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_RJAHR&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_rjahr &apos;&apos;,
+              lt_seltab ls_seltab &apos;S_BUDAT&apos; &apos;S&apos; &apos;I&apos; &apos;EQ&apos; s_budat-low s_budat-high,
+              lt_seltab ls_seltab &apos;P_TREQ&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_treq &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_ORD&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_ord &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_PRO&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_pro &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_PATH&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; vs_server_path &apos;&apos;.
+
+        ELSEIF p_aux EQ abap_true.
+*      /* Get file name. */
+          CONCATENATE wa_t001z-paval p_gjahr p_period &apos;XC&apos; &apos;.xml&apos; INTO vs_file_name.
+*      /* Get server path. */
+          CONCATENATE wa_zfiteaccounting-fsnam vs_file_name INTO vs_server_path.
+*      /* Get target path. */
+          CONCATENATE wa_zfiteaccounting-fsnam_l vs_file_name INTO vs_target_path.
+
+*      /* Set values from parametes and select options. */
+          define_screen_values:
+              lt_seltab ls_seltab &apos;P_COA&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_false &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_BAL&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_false &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_JE&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_false &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_AUX&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; abap_true &apos;&apos;,
+              lt_seltab ls_seltab &apos;S_BUKRS&apos; &apos;S&apos; &apos;I&apos; &apos;EQ&apos; s_bukrs &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_GJAHR&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_gjahr &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_PERIOD&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_period &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_TREQ&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_treq &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_ORD&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_ord &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_PRO&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; p_pro &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_FSV&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; wa_zfiteaccounting-versn &apos;&apos;,
+              lt_seltab ls_seltab &apos;P_PATH&apos; &apos;P&apos; &apos;I&apos; &apos;EQ&apos; vs_server_path &apos;&apos;.
+
+        ENDIF.
+
+        DATA: va_jobname  LIKE tbtco-jobname,
+              vn_jobcount LIKE tbtco-jobcount.
+
+*    /* Set job name. */
+        CONCATENATE &apos;ZJOB_EACCOUNTING&apos; sy-datum sy-uname INTO va_jobname SEPARATED BY &apos;_&apos;.
+
+*    /* open job. */
+        CALL FUNCTION &apos;JOB_OPEN&apos;
+          EXPORTING
+            jobname          = va_jobname
+          IMPORTING
+            jobcount         = vn_jobcount
+          EXCEPTIONS
+            cant_create_job  = 1
+            invalid_job_data = 2
+            jobname_missing  = 3
+            OTHERS           = 4.
+        CASE sy-subrc.
+          WHEN 0.
+*        /* call report. */
+            SUBMIT rpfiglmx_eaccounting
+                    USER sy-uname
+                    VIA JOB va_jobname NUMBER vn_jobcount
+                    WITH SELECTION-TABLE lt_seltab
+*              EXPORTING LIST TO MEMORY
+                    AND RETURN.
+
+            IF sy-subrc = 0.
+*          /* Close job. */
+              CALL FUNCTION &apos;JOB_CLOSE&apos;
+                EXPORTING
+                  jobcount             = vn_jobcount
+                  jobname              = va_jobname
+                  strtimmed            = &apos;X&apos;  &quot; start immediatly
+                EXCEPTIONS
+                  cant_start_immediate = 1
+                  invalid_startdate    = 2
+                  jobname_missing      = 3
+                  job_close_failed     = 4
+                  job_nosteps          = 5
+                  job_notex            = 6
+                  lock_failed          = 7
+                  OTHERS               = 8.
+
+              IF sy-subrc EQ 0.
+
+                DATA:
+                  ld_jobname_out   TYPE tbtco-jobname,
+                  ld_jobnumber_out TYPE tbtco-jobcount,
+                  ld_jobstatus     TYPE tbtco-status.
+
+                WHILE ld_jobstatus NE &apos;F&apos;.
+                  CALL FUNCTION &apos;BDL_READ_JOB_STATUS&apos;
+                    EXPORTING
+                      jobname       = va_jobname
+                      jobnumber     = vn_jobcount
+                    IMPORTING
+                      jobname_out   = ld_jobname_out
+                      jobnumber_out = ld_jobnumber_out
+                      jobstatus     = ld_jobstatus
+                    EXCEPTIONS
+                      job_not_found = 1
+                    .  &quot;  BDL_READ_JOB_STATUS
+                  IF sy-subrc EQ 0.
+                    &quot;All OK
+                  ENDIF.
+                ENDWHILE.
+
+                par_path = vs_server_path.
+
+*                PERFORM check_byte_order.
+
+                CALL FUNCTION &apos;FILE_VALIDATE_NAME&apos;
+                  EXPORTING
+                    logical_filename  = gc_filename &quot;FI_RFASLDPC
+                  CHANGING
+                    physical_filename = par_path &quot;/usr/sap/S4D/SAT/XAXX010101XXX201701CT.xml
+                  EXCEPTIONS
+                    OTHERS            = 1.
+
+                IF sy-subrc &lt;&gt; 0.
+                  MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno
+                    WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.
+                ENDIF.
+
+                OPEN DATASET par_path FOR INPUT IN BINARY MODE.
+
+                APPEND space TO dtastr.                     &quot;1776497
+                READ TABLE dtastr ASSIGNING &lt;fs_line&gt; INDEX 1. &quot;1776497
+
+
+                READ DATASET par_path INTO &lt;fs_line&gt; LENGTH hlp_length. &quot;1776497
+
+                CLOSE DATASET par_path.
+
+                hlp_file = vs_target_path.&quot;&apos;D:\temp\XAXX010101XXX201701CT.xml&apos;.
+
+                hlp_file_h = hlp_file.
+
+*            /* begin of insertion &quot;837748
+                CALL FUNCTION &apos;GUI_DOWNLOAD&apos;
+                  EXPORTING
+                    filename                  = hlp_file_h  &quot;Zielfile
+                    filetype                  = &apos;ASC&apos;
+                    codepage                  = &apos;0000&apos;                  &quot;989338
+                    write_lf                  = space  &quot;do not append CR/LF
+                    trunc_trailing_blanks     = space  &quot;do not delete any blanks
+                    trunc_trailing_blanks_eol = space  &quot;do not delete any blanks
+                  TABLES
+                    data_tab                  = dtastr                &quot;1776497
+                  EXCEPTIONS
+                    file_not_found            = 1                     &quot;1597340
+                    file_write_error          = 2.
+*           /* end of insertion &quot;837748
+
+                CASE sy-subrc.
+                  WHEN 0.
+                    PERFORM write_text USING TEXT-059.
+                    ULINE.
+                  WHEN 1.
+*                  MESSAGE e306 WITH hlp_file.
+                  WHEN 2.
+                    MESSAGE e309 WITH hlp_file.
+                ENDCASE.
+
+              ENDIF.
+            ELSE.
+              CALL FUNCTION &apos;RSCRT_RDA_DELETE_JOBS&apos;
+                EXPORTING
+                  i_jobname     = va_jobname
+                  i_jobcount    = vn_jobcount
+                EXCEPTIONS
+                  failed        = 1
+                  job_not_found = 2
+                .  &quot;  RSCRT_RDA_DELETE_JOBS
+
+              IF sy-subrc EQ 0.
+                &quot;All OK
+              ELSEIF sy-subrc EQ 1. &quot;Exception
+                &quot;Add code for exception here
+              ELSEIF sy-subrc EQ 2. &quot;Exception
+                &quot;Add code for exception here
+              ENDIF.
+
+              DATA(msg) = cl_abap_submit_handling=&gt;get_error_message( ).
+              MESSAGE ID msg-msgid
+                      TYPE &apos;I&apos;
+                      NUMBER msg-msgno
+                      WITH msg-msgv1 msg-msgv2 msg-msgv3 msg-msgv4
+                      DISPLAY LIKE msg-msgty.
+            ENDIF.
+          WHEN OTHERS.
+            MESSAGE e208(00) WITH TEXT-060.
+        ENDCASE.
+      ELSE.
+        MESSAGE s750(tpda) WITH TEXT-057 DISPLAY LIKE &apos;E&apos;.
+        RETURN.
+      ENDIF.
+    ELSE.
+      MESSAGE s750(tpda) WITH TEXT-057 DISPLAY LIKE &apos;E&apos;.
+      RETURN.
+    ENDIF.
+  ELSE.
+    MESSAGE s750(tpda) WITH TEXT-058 DISPLAY LIKE &apos;E&apos;.
+    RETURN.
+  ENDIF.</source>
+ </PROG>
  <TABL TABNAME="ZFITEACCOUNTING" DDLANGUAGE="S" TABCLASS="TRANSP" DATMIN="0000000000" DATMAX="0000000000" DATAVG="0000000000" CLIDEP="X" DDTEXT="Configuración EACCOUNTING" AUTHCLASS="00" MAINFLAG="X" CONTFLAG="A" PROZPUFF="000" EXCLASS="4">
   <dd09l TABNAME="ZFITEACCOUNTING" AS4LOCAL="A" AS4VERS="0000" TABKAT="0" TABART="APPL0" SCHFELDANZ="000" PROTOKOLL="X" BUFALLOW="N" ROWORCOLST="C"/>
   <dd03p TABNAME="ZFITEACCOUNTING" FIELDNAME="MANDT" DDLANGUAGE="S" POSITION="0001" KEYFLAG="X" ROLLNAME="MANDT" CHECKTABLE="T000" ADMINFIELD="0" INTTYPE="C" INTLEN="000006" NOTNULL="X" DOMNAME="MANDT" ROUTPUTLEN="000000" HEADLEN="03" SCRLEN1="10" SCRLEN2="15" SCRLEN3="20" DTELMASTER="D" DATATYPE="CLNT" LENG="000003" OUTPUTLEN="000003" DECIMALS="000000" ENTITYTAB="T000" MASK="  CLNTE" MASKLEN="0000" DDTEXT="Mandante" REPTEXT="Md." SCRTEXT_S="Mandante" SCRTEXT_M="Mandante" SCRTEXT_L="Mandante" DOMNAME3L="MANDT" SHLPORIGIN="P" DEPTH="00" COMPTYPE="E" EXCLASS="0" DBPOSITION="0000" OUTPUTSTYLE="00" STRORLOCPOS="00" SRS_ID="0000000000"/>
@@ -1014,6 +1167,12 @@ ENDFORM.
   <dd08v TABNAME="ZFITEACCOUNTING" FIELDNAME="MANDT" DDLANGUAGE="S" CHECKTABLE="T000" FRKART="KEY" CARD="CN" CARDLEFT="1"/>
   <dd08v TABNAME="ZFITEACCOUNTING" FIELDNAME="VERSN" DDLANGUAGE="S" CHECKTABLE="T011" FRKART="KEY" CARD="CN" CARDLEFT="1"/>
  </TABL>
+ <TRAN TCODE="ZFIGLMX_EACCT" PGMNA="Z_S4_FI_PE_EACCOUNTING" DYPNO="1000" CINFO="80">
+  <tstct SPRSL="S" TCODE="ZFIGLMX_EACCT" TTEXT="Transacción para Mexico E-Accounting"/>
+  <tstcc TCODE="ZFIGLMX_EACCT" S_WEBGUI="1" S_WIN32="X" S_PLATIN="X"/>
+  <tstcp/>
+  <rsstcd ST_PROG="X" DEVCLASS="$TMP"/>
+ </TRAN>
  <TRAN TCODE="ZFITEACCOUNTING" DYPNO="0000" CINFO="02">
   <tstct SPRSL="S" TCODE="ZFITEACCOUNTING" TTEXT="Configuración EACCOUNTING"/>
   <tstcc TCODE="ZFITEACCOUNTING" S_WEBGUI="1" S_WIN32="X" S_PLATIN="X"/>
@@ -1022,4 +1181,22 @@ ENDFORM.
   <rsparam FIELD="VIEWNAME" VALUE="ZFITEACCOUNTING"/>
   <rsparam FIELD="UPDATE" VALUE="x"/>
  </TRAN>
+ <DTEL ROLLNAME="ZFIGLMX_BALANCE_C" DDLANGUAGE="S" DOMNAME="XFELD" ROUTPUTLEN="000000" HEADLEN="55" SCRLEN1="10" SCRLEN2="20" SCRLEN3="40" DDTEXT="Crear fichero XML para saldos de cuenta" REPTEXT="Saldo de cuenta complementario" SCRTEXT_S="Saldo C" SCRTEXT_M="Saldo de cuenta comp" SCRTEXT_L="Saldo de cuenta complementario" AUTHCLASS="00" DTELMASTER="S" DATATYPE="CHAR" LENG="000001" DECIMALS="000000" OUTPUTLEN="000001" VALEXI="X" REFKIND="D" MultiLanguageSupport="X">
+  <tpara/>
+  <DDLANGUAGE LANGU="S">
+   <DD04V ROLLNAME="ZFIGLMX_BALANCE_C" DDLANGUAGE="S" DOMNAME="XFELD" ROUTPUTLEN="000000" HEADLEN="55" SCRLEN1="10" SCRLEN2="20" SCRLEN3="40" DDTEXT="Crear fichero XML para saldos de cuenta" REPTEXT="Saldo de cuenta complementario" SCRTEXT_S="Saldo C" SCRTEXT_M="Saldo de cuenta comp" SCRTEXT_L="Saldo de cuenta complementario" AUTHCLASS="00" DTELMASTER="S" DATATYPE="CHAR" LENG="000001" DECIMALS="000000" OUTPUTLEN="000001" VALEXI="X" REFKIND="D"/>
+  </DDLANGUAGE>
+ </DTEL>
+ <DTEL ROLLNAME="ZFIGLMX_BALANCE_N" DDLANGUAGE="S" DOMNAME="XFELD" ROUTPUTLEN="000000" HEADLEN="55" SCRLEN1="10" SCRLEN2="20" SCRLEN3="40" DDTEXT="Crear fichero XML para saldos de cuenta" REPTEXT="Saldo de cuenta normal" SCRTEXT_S="Saldo N" SCRTEXT_M="Saldo de cuenta nor." SCRTEXT_L="Saldo de cuenta normal" AUTHCLASS="00" DTELMASTER="S" DATATYPE="CHAR" LENG="000001" DECIMALS="000000" OUTPUTLEN="000001" VALEXI="X" REFKIND="D" MultiLanguageSupport="X">
+  <tpara/>
+  <DDLANGUAGE LANGU="S">
+   <DD04V ROLLNAME="ZFIGLMX_BALANCE_N" DDLANGUAGE="S" DOMNAME="XFELD" ROUTPUTLEN="000000" HEADLEN="55" SCRLEN1="10" SCRLEN2="20" SCRLEN3="40" DDTEXT="Crear fichero XML para saldos de cuenta" REPTEXT="Saldo de cuenta normal" SCRTEXT_S="Saldo N" SCRTEXT_M="Saldo de cuenta nor." SCRTEXT_L="Saldo de cuenta normal" AUTHCLASS="00" DTELMASTER="S" DATATYPE="CHAR" LENG="000001" DECIMALS="000000" OUTPUTLEN="000001" VALEXI="X" REFKIND="D"/>
+  </DDLANGUAGE>
+ </DTEL>
+ <DTEL ROLLNAME="ZTIPOXML" DDLANGUAGE="S" ROUTPUTLEN="000000" HEADLEN="55" SCRLEN1="10" SCRLEN2="20" SCRLEN3="40" DDTEXT="Tipo de XML" REPTEXT="Tipo de XML" SCRTEXT_S="Tipo XML" SCRTEXT_M="Tipo de XML" SCRTEXT_L="Tipo de XML" AUTHCLASS="00" DTELMASTER="S" DATATYPE="CHAR" LENG="000002" DECIMALS="000000" OUTPUTLEN="000002" MultiLanguageSupport="X">
+  <tpara/>
+  <DDLANGUAGE LANGU="S">
+   <DD04V ROLLNAME="ZTIPOXML" DDLANGUAGE="S" ROUTPUTLEN="000000" HEADLEN="55" SCRLEN1="10" SCRLEN2="20" SCRLEN3="40" DDTEXT="Tipo de XML" REPTEXT="Tipo de XML" SCRTEXT_S="Tipo XML" SCRTEXT_M="Tipo de XML" SCRTEXT_L="Tipo de XML" AUTHCLASS="00" DTELMASTER="S" DATATYPE="CHAR" LENG="000002" DECIMALS="000000" OUTPUTLEN="000002"/>
+  </DDLANGUAGE>
+ </DTEL>
 </nugget>
